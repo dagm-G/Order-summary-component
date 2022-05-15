@@ -1,0 +1,129 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: var(--Pale-blue);
+}
+.flexy {
+  display: flex;
+}
+
+#card {
+  width: 330px;
+  height: 510px;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  margin-top: -255px;
+  margin-left: -165px;
+  border-radius: 16px;
+  background-color: white;
+}
+#card-img {
+  height: 30%;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+#info {
+  height: 62%;
+  width: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1rem auto;
+}
+
+#header {
+  text-align: center;
+  color: var(--Dark-blue);
+  font-size: 1.5rem;
+}
+
+#description {
+  text-align: center;
+  color: var(--Desaturated-blue);
+}
+
+#pricing {
+  background-color: var(--Very-pale-blue);
+  border-radius: 5px;
+  height: 4rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#icon {
+  width: fit-content;
+}
+#plan-price {
+  flex-direction: column;
+  justify-content: space-around;
+  width: fit-content;
+  height: 60%;
+}
+#nav-link {
+  display: block;
+  margin-left: 2.56rem;
+  width: fit-content;
+}
+#nav-link:hover {
+  text-decoration: none;
+  color: var(--Bright-blue);
+  opacity: 0.6;
+}
+#price {
+  color: var(--Desaturated-blue);
+  font-size: 13px;
+}
+
+#proceed {
+  background-color: var(--Bright-blue);
+  font-weight: bold;
+
+  color: white;
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 5px;
+  border: none;
+}
+#proceed:hover {
+  opacity: 0.6;
+}
+#cancel {
+  color: var(--Desaturated-blue);
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+#cancel:hover {
+  color: var(--Dark-blue);
+}
+@media (max-width: 450px) {
+  #card {
+    width: 90%;
+    height: 580px;
+    top: 50%;
+    right: unset;
+    bottom: unset;
+    left: unset;
+    margin:-295px 0 0 5%;
+}
